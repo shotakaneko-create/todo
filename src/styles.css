@@ -1,0 +1,78 @@
+body {
+  font-family: sans-serif;
+}
+
+input {
+  border-radius: 16px;
+  border: none;
+  /* paddingの後の直後の数字が上下の高さ、二番目の数字が左右の長さ */
+  padding: 6px 16px;
+  /* フォーカスを当ててもラインが表示されないようにする */
+  outline: none;
+}
+
+button {
+  border-radius: 16px;
+  border: none;
+  padding: 4px 16px;
+}
+
+/* ボタンにカーソルが当たった時（マウスオーバー） */
+button:hover {
+  background-color: #ff7fff;
+  color: #fff;
+  /* マウスの形を変更する */
+  cursor: pointer;
+}
+
+.todo-list {
+  /* TODOリストの項目名とボタンとの被りをなくす */
+  margin-right: 8px;　
+}
+
+.input-area {
+  background-color: #c1ffff;
+  width: 400px;
+  height: 30px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 10px;
+}
+
+.imcomplete-area {
+  background-color: #c6ffe2;
+  width: 400px;
+  min-height: 200px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.complete-area {
+  background-color: #ffffe0;
+  width: 400px;
+  min-height: 200px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.title {
+  /* 文字の位置を中央にする */
+  text-align: center;
+  /* marginのトップを0 */
+  margin-top: 0;
+  /* 大文字に変更 */
+  font-weight: bold;
+  /* 文字を太字にしたことで主張が強すぎるので色を抑える */
+  color: #666;
+}
+
+.list-row {
+  /* 文字とボタンを横に並べる */
+  display: flex;
+  /* 親要素にdisplayプロパティである、「flex / inline-flex」を指定すると子要素は自動的にflexboxアイテムになる */
+  align-items: center;
+  /* 行間の調整 */
+  line-height: 0;
+}
